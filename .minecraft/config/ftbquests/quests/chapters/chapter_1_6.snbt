@@ -1,0 +1,247 @@
+{
+	autofocus_id: "06E59BA6641140AB"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_6"
+	group: "1401F681F00E4A15"
+	id: "77115FB0643A8988"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"原油探测器可以探测当前所在区块的原油储量。"
+				"为什么这个任务的奖励是储罐？你会知道的"
+			]
+			id: "06E59BA6641140AB"
+			rewards: [{
+				count: 9
+				id: "21AC3107DF5C2124"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.3d
+			tasks: [{
+				id: "13F5E898298013EC"
+				item: "createdieselgenerators:oil_scanner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06E59BA6641140AB"]
+			description: [
+				"当你找到一个有油藏的区块，就可以在此建造抽油机了。"
+				"首先你需要挖一个&l直达&r基岩的洞，然后一路延伸管道到地表，在地表放下抽油泵；然后再按照思索建造一套抽油机曲柄、驴头、轴承，最后接入管道和储罐，并输入应力，然后就可以开始抽取原油了。在CRRA附属的“吸管”物品加持下，它能为烈焰人燃烧室提供等同于岩浆的加热能力。"
+			]
+			id: "0A2D17181B1E323A"
+			rewards: [{
+				count: 128
+				id: "46AA9BF2F10467B9"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "13B89426660EEBCF"
+				item: "createdieselgenerators:pumpjack_hole"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A2D17181B1E323A"]
+			description: [
+				"在采掘出原油后你需要进行分馏以获得更有效率的燃料。分馏塔控制器能提供帮助。"
+				"按[W]思索以获得具体的使用方法。"
+			]
+			id: "7057EB9A70E5C4F2"
+			rewards: [{
+				id: "2F6B29FBCDD06226"
+				item: "createdieselgenerators:crude_oil_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F79988390B3E307"
+				item: "createdieselgenerators:distillation_controller"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06E59BA6641140AB"]
+			description: [
+				"更环保的燃料！"
+				"注意，它与CCAC模组的生物乙醇桶互不兼容！"
+			]
+			id: "67FC4B9431145D6C"
+			rewards: [{
+				id: "4EF02DCDEF0057A1"
+				item: "createdieselgenerators:basin_lid"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71D78630D4D7C987"
+				item: "createdieselgenerators:biodiesel_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7057EB9A70E5C4F2"]
+			description: [
+				"柴油是分馏塔下层的产物。它能提供更高的转速与应力输出。"
+				"在CCAC模组吸管的加持下它可以提供&b超级加热&r的热量等级。"
+			]
+			id: "5EBE8DD72E3F4B02"
+			tasks: [{
+				id: "4E527D179625ECA7"
+				item: "createdieselgenerators:diesel_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7057EB9A70E5C4F2"]
+			description: [
+				"汽油是分馏塔中上层的产物。"
+				"它和柴油有何不同？好吧其实没啥不同。"
+			]
+			id: "3CDDD695FCE6B040"
+			tasks: [{
+				id: "3843AD0F38F5A51D"
+				item: "createdieselgenerators:gasoline_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["06E59BA6641140AB"]
+			description: [
+				"柴油引擎可以消耗柴油提供应力。"
+				"说实话它其实不如蒸汽引擎，但是可以做的很小，而且套上消音器可以完全无声地运作！"
+			]
+			id: "501FB1327FA65716"
+			rewards: [{
+				id: "1C117BCE95D6AB8B"
+				item: "createdieselgenerators:engine_silencer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B86526A8184B2ED"
+				item: "createdieselgenerators:diesel_engine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["06E59BA6641140AB"]
+			description: [
+				"一个引擎提供的应力太少？试试模块柴油引擎！"
+				"它可以多个组合提供成倍的应力！"
+				"当然，耗油也是成倍增加的，但是不需要为每个引擎都接上输油管道！"
+			]
+			id: "0E1CE12E5AE7369A"
+			rewards: [{
+				id: "053D8438327C69D3"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "434D9EFB5E04ADA6"
+				item: "createdieselgenerators:large_diesel_engine"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["06E59BA6641140AB"]
+			description: ["一个放大的柴油引擎，别的毫无不同。"]
+			id: "00A8A49308886C85"
+			tasks: [{
+				id: "0863E813CD93291C"
+				item: "createdieselgenerators:huge_diesel_engine"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["06E59BA6641140AB"]
+			description: [
+				"它和流体储罐一样可以存储液体。"
+				"但是它的外壁可以用染料染色，看起来帅的多不是吗（"
+			]
+			id: "2506D9F4FC13ECC4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "48A3DE9929C9860C"
+				table_id: 58182215786109288L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "51866AD07EC69A66"
+				item: "createdieselgenerators:oil_barrel"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["06E59BA6641140AB"]
+			description: [
+				"密封储罐可以存储液体，破坏方块可以保留其中的液体一起带走"
+				"这是最方便的转运液体方式之一！"
+			]
+			id: "3F6086BCA8DE2AE4"
+			rewards: [{
+				id: "41A83B03A374CCFA"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E7106BDED2F0051"
+				item: "createdieselgenerators:canister"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0A2D17181B1E323A"]
+			description: ["来，抽根烟~"]
+			id: "484DF65C7DE06455"
+			tasks: [{
+				id: "5795EE9DE8138015"
+				item: "createdieselgenerators:lighter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A2D17181B1E323A"]
+			description: [
+				"&e·已發現噴火兵裝備·"
+				"这玩意好像啥都能喷（"
+			]
+			id: "298BE69BE19C816C"
+			tasks: [{
+				id: "10384FE3564BC3F8"
+				item: "createdieselgenerators:chemical_sprayer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+	]
+	title: "Chapter 1：点火启动"
+}

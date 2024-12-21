@@ -1,0 +1,69 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2DCD52F628E375DC"
+	group: "5424721BCC414E3B"
+	icon: "minecraft:chest"
+	id: "2DCD52F628E375DC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"金属钍是CCAC附属核能部分的燃料——没错，你可以在这个附属里建造核反应堆产生大量热量！"
+				"&4在最佳情况下，核反应堆能够输出相当于&r&b超级加热&4的温度。&r"
+				"&o（而且为啥这玩意能用这么生草的方式量产？！"
+			]
+			id: "298F1F83B66991C1"
+			rewards: [
+				{
+					id: "64F7002A98D50ED3"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					id: "227BBCC92541F172"
+					item: "minecraft:clay"
+					type: "item"
+				}
+				{
+					id: "4051F2A24EC4380F"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4B1B980C8EAC5EDE"
+				item: "create_new_age:thorium"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"它可以强制加载所在的区块以保证机器运行。"
+				"但会消耗大量应力。"
+				"除了此方式，本包中的FTB Team模组也可以强制加载区块，而且不消耗任何东西。"
+				"（别让我看见谁拿一堆加载器卡服😡"
+			]
+			id: "03B20B4737245017"
+			tasks: [
+				{
+					id: "15B2E3A1DB392365"
+					item: "create_power_loader:empty_andesite_chunk_loader"
+					type: "item"
+				}
+				{
+					id: "5807E3C8C0B0476B"
+					item: "create_power_loader:empty_brass_chunk_loader"
+					type: "item"
+				}
+			]
+			title: "区块加载器"
+			x: -5.0d
+			y: -2.0d
+		}
+	]
+	title: "其他附属与模组"
+}

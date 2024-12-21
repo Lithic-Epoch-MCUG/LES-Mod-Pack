@@ -1,0 +1,153 @@
+{
+	autofocus_id: "1CA5B621C71C4FDC"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_5"
+	group: "0DE2A2D04EBD5A07"
+	icon: "create:experience_nugget"
+	id: "0FCF8436EE459951"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"附魔工业从烈焰人开始——这话听着有些费解不是吗？"
+				"合成附魔指南，选定附魔后交给烈焰人燃烧室，它就会自动变成烈焰人附魔室。这时再输入足够的经验，便可以自动为可兼容的装备附魔。当可以升级时烈焰人附魔室会自动为装备升级附魔，并且它不能给书附魔——那是复印机的工作。"
+			]
+			icon: "create:blaze_burner"
+			id: "1CA5B621C71C4FDC"
+			rewards: [{
+				id: "5A8342DE4BEE48EB"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "gear"
+			size: 1.3d
+			tasks: [{
+				id: "799539B7D161136D"
+				item: "create_enchantment_industry:enchanting_guide"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CA5B621C71C4FDC"]
+			description: [
+				"被机械手杀死的生物可以掉落经验颗粒。部分粉碎工艺也会提供经验颗粒。"
+				"考虑到一个经验颗粒只提供10mB液态经验，是否该考虑考虑一些更加自动化的方式？"
+			]
+			id: "3ADF5C0197B876A4"
+			rewards: [{
+				count: 10
+				id: "071131AADD9824A7"
+				item: "minecraft:experience_bottle"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E83F5D828069E03"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3ADF5C0197B876A4"]
+			description: ["超经验可以由液态经验转化得到，它是超越附魔的必要成分。"]
+			id: "7DC16C46FC0F692E"
+			rewards: [{
+				count: 8
+				id: "11EE835D892C03BD"
+				item: "create:experience_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "766947DC3368C78D"
+				item: "create_enchantment_industry:hyper_experience_bottle"
+				type: "item"
+			}]
+			title: "&b超经验"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3ADF5C0197B876A4"
+				"1CA5B621C71C4FDC"
+			]
+			description: ["恭喜你完成了第一次烈焰人附魔！感觉怎么样？不消耗附魔书的感觉是不是很不错？"]
+			id: "4886904296861340"
+			rewards: [
+				{
+					id: "3DE28999BC0DC7EA"
+					item: "create_enchantment_industry:enchanting_guide"
+					type: "item"
+				}
+				{
+					id: "7CEA2598B4C6ED34"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "create_enchantment_industry:blazes_new_job"
+				criterion: ""
+				id: "6A356EF240762F44"
+				type: "advancement"
+			}]
+			title: "第一次附魔！"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CA5B621C71C4FDC"]
+			description: ["墨水桶是复印工艺的基础。它可以用来复印附魔书、成书以及为物品命名。"]
+			id: "678CD34CCA0095D4"
+			tasks: [{
+				id: "4A969C22FDBF8168"
+				item: "create_enchantment_industry:ink_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"678CD34CCA0095D4"
+				"4886904296861340"
+			]
+			description: ["打印机可以打印几乎一切物品：提供附魔指南，它可以批量生产附魔书；提供成书，它可以复印成书；提供命名牌，它可以批量为物品命名……"]
+			id: "20FA673DA6BD6EC0"
+			rewards: [{
+				id: "19AA194A48F57DDA"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CE5F02346277A6C"
+				item: "create_enchantment_industry:printer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			description: ["经验转子是一个兼容性物品，可以将不兼容的经验转换为兼容模组内其他方块的液态经验进行下一步的处理。"]
+			id: "3D758F9D09880F5F"
+			rewards: [{
+				id: "0B733720A925D35B"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A41BE1F92E5B514"
+				item: "create_enchantment_industry:experience_rotor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Chapter 1：自动魔法"
+}

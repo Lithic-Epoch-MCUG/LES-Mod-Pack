@@ -1,0 +1,692 @@
+{
+	autofocus_id: "3C49DD84554E93D6"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1"
+	group: "2E0650F98DAA5E4B"
+	icon: "create:cogwheel"
+	id: "238A610D149DC540"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"安山合金是机械动力最重要的金属，没有之一。"
+				"用安山岩和铁粒（或者锌粒）在工作台中合成即可。"
+				"也许以后可以试试量产？"
+			]
+			id: "3C49DD84554E93D6"
+			rewards: [{
+				count: 16
+				id: "6DE85016077946C3"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "机械动力之旅从此开始"
+			tasks: [{
+				count: 16L
+				id: "356685632F065FC3"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "安山时代"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C49DD84554E93D6"]
+			description: [
+				"至此你应该已经完成了第一个安山合金产线。"
+				"感受到机械动力的量产之力了吗？"
+				"*你总不会是手搓了这么多吧"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "16855E002CAFE7F9"
+			invisible: true
+			rewards: [{
+				id: "2C1D23E8146B1178"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			shape: "gear"
+			subtitle: "圆石生万物"
+			tasks: [{
+				count: 64L
+				id: "40BE37098D8E3EC7"
+				item: "create:andesite_alloy_block"
+				type: "item"
+			}]
+			title: "量产之力 I"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C49DD84554E93D6"]
+			description: [
+				"齿轮是机械动力最重要的传动部件之一，它也是许多机器的必备零件。"
+				"大齿轮比齿轮大一圈，同时可以在空间中彼此咬合来切换方向，这在某些时候很有用。"
+			]
+			icon: "create:cogwheel"
+			id: "7ABC2396EF025A26"
+			rewards: [{
+				count: 16
+				id: "35457519AD2F3E61"
+				item: "create:shaft"
+				type: "item"
+			}]
+			subtitle: "传输动力的最基础方式"
+			tasks: [
+				{
+					count: 4L
+					id: "214FD04A52A0AC08"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "77C059B6A6349AE6"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "齿轮传动 I"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3C49DD84554E93D6"]
+			description: [
+				"安山机壳可以用来装饰齿轮、传动杆与传送带"
+				"还是重要的机器部件。"
+				"由于扳手Shift+右键可以快速拆除并回收机械动力方块，用安山机壳搭路也是一个不错的选择（？"
+			]
+			id: "04F9E9271DE03515"
+			rewards: [{
+				id: "17C9E732195DDF91"
+				item: "create:depot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.1d
+			tasks: [{
+				id: "7DE1ED091EB09F0E"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7ABC2396EF025A26"]
+			description: ["大齿轮可以在空间中彼此咬合，但是那样有些太过臃肿了，试试十字齿轮箱，它可以在一个方块内向四个方向传输应力！注意，两个相对方向的传输方向是相反的。"]
+			id: "3EB39703DC7836D6"
+			rewards: [{
+				id: "07541BC8B31B7C1D"
+				item: "create:vertical_gearbox"
+				type: "item"
+			}]
+			tasks: [{
+				id: "601A6ED37FF2F994"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7ABC2396EF025A26"]
+			description: [
+				"当连接在一起时，大齿轮和小齿轮的线速度是一样的，这意味着大齿轮的角速度（也就是转速）是小齿轮的两倍。因此利用大齿轮和小齿轮的啮合可以实现转速的控制，这对于提高效率很有用。注意，改变转速会导致机器消耗的应力发生改变，最好提前注意应力是否足够！"
+				"（也许除了齿轮还有一些变速方式？"
+			]
+			id: "6AA18C074A59FEFD"
+			rewards: [{
+				id: "54F5ED8042B085B5"
+				item: "create:adjustable_chain_gearshift"
+				type: "item"
+			}]
+			subtitle: "换挡，加速，起飞！"
+			tasks: [{
+				id: "024923DB25958216"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			title: "齿轮传动 II"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3EB39703DC7836D6"]
+			description: ["除了十字齿轮箱，还有许多其他种类的齿轮箱供玩家使用。你可以利用思索功能查询它们的作用。"]
+			id: "56143C703001D59F"
+			rewards: [
+				{
+					id: "1BC56031DBFF2684"
+					item: "create:gearshift"
+					type: "item"
+				}
+				{
+					id: "4B77A8B693388E8C"
+					item: "create:adjustable_chain_gearshift"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5FED34B70D2635D4"
+					item: "create:clutch"
+					type: "item"
+				}
+				{
+					id: "1C2F27D238301A92"
+					item: "create:encased_chain_drive"
+					type: "item"
+				}
+			]
+			title: "更多齿轮箱！"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3C49DD84554E93D6"]
+			description: [
+				"水车是获取应力的最基本方法。使水车周围至少&l3&r个方块包含流动的水即可激活水车，增加流动水的数量不会影响应力输出，"
+				"大型水车顾名思义，更大，更慢，应力更多。也许你需要一些方法来改变速度。"
+				"在应急情况下，也许手摇也是一个办法（？"
+			]
+			id: "30DE060B13FACECF"
+			rewards: [
+				{
+					count: 3
+					id: "1C9511080AF2EB36"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "66EAA1C30EBC8785"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+				{
+					id: "29BE79B1798AD2AE"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
+			subtitle: "获取应力的最初方法！"
+			tasks: [{
+				id: "7596E2104330D5BE"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "澎湃动力 I"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["30DE060B13FACECF"]
+			description: ["风车是第二个获取应力的方式。所有风帆与羊毛都可以为风车提供应力。风车可以自动连接最近的1个方块与所有相连的风帆，如果需要连接更多方块则需要强力胶。同样，风车应该是玩家接触的第一个大型的&n实体化运动结构&r，这一概念会贯穿机械动力始终。"]
+			id: "4E0B531E5E26F211"
+			rewards: [
+				{
+					count: 16
+					id: "7DE452F9E0EA0FFB"
+					item: "create:white_sail"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "35D0819285DC889B"
+					item: "create:shaft"
+					type: "item"
+				}
+			]
+			subtitle: "获取应力的过渡方式！"
+			tasks: [
+				{
+					id: "1EBAE155BE388055"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5F51E0535865619A"
+					item: { Count: 16, id: "create:white_sail" }
+					type: "item"
+				}
+			]
+			title: "澎湃动力 II"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["04F9E9271DE03515"]
+			description: ["基础机械之一。可以将物品压成片，也可以用于压块塑形。需要置物台或类似物。"]
+			id: "0EA5378C792D7F7C"
+			rewards: [{
+				id: "4BBB183DA45A59C7"
+				item: "create:depot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F7EE07DA15D8937"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["04F9E9271DE03515"]
+			description: [
+				"基础机械之一。用于混合合成。需要工作盆。有时需要加热。"
+				"无法工作？看看转速是不是过低了，也许其他任务的内容可以帮到你。"
+			]
+			id: "7EC3C45FE39CBB8D"
+			rewards: [{
+				id: "40B8BD07DEECF607"
+				item: "create:depot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0A279D66F71FCAAE"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "77F69107ADEFEB66"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["04F9E9271DE03515"]
+			description: ["基础机械之一。用于破坏方块，或者制作矿机。"]
+			id: "1BC38A6ED24678EC"
+			rewards: [{
+				count: 15
+				id: "7E09F929DE554E5E"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4549CC7AF14425CA"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["04F9E9271DE03515"]
+			description: ["基础机械之一。用于切割方块。可以提前指定产物，且无论输入方向为何，输出方向总是固定的（锯子运行方向）。&4注意安全！"]
+			id: "675B85DE93E446CC"
+			tasks: [{
+				id: "1BA5CA4B0441C9DC"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0EA5378C792D7F7C"]
+			description: ["利用辊压机将锭压成板以进行后续加工。"]
+			id: "1CB3EE95106409BD"
+			rewards: [{
+				count: 4
+				id: "72BE896C3EBFF59F"
+				item: "create:copper_sheet"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "7D635B0FC1B2E74D"
+				item: { Count: 8, id: "create:iron_sheet" }
+				type: "item"
+			}]
+			title: "辊压成型"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1CB3EE95106409BD"]
+			description: ["下界有许多珍贵的资源，甚至生物本身也可以是一种。"]
+			id: "2FA146CEF572A370"
+			rewards: [{
+				id: "6DA9D9A0B5D21C49"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "77D061E6EC164500"
+				type: "dimension"
+			}]
+			title: "前往下界"
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2FA146CEF572A370"]
+			description: [
+				"恭喜你获得了烈焰人燃烧室，一种加热的极好方式。"
+				"向烈焰人燃烧室里塞入燃料便可加热。"
+				"也许有些方式可以获得更高的温度？"
+			]
+			id: "31B214519E312836"
+			rewards: [{
+				id: "301EBE48575C49DE"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "2F5210C9BF055C00"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4E0B531E5E26F211"]
+			description: [
+				"一个风车最高只可以输出8192su的应力，对应128个有效方块。"
+				"需要更多应力？继续发展！"
+			]
+			id: "7B1C637833330693"
+			invisible: true
+			rewards: [
+				{
+					count: 128
+					id: "2C6D75303DFABD3A"
+					item: "create:white_sail"
+					type: "item"
+				}
+				{
+					id: "36D11FF614223CBB"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 128L
+				id: "662C818FCD8878C3"
+				item: { Count: 128, id: "create:white_sail" }
+				type: "item"
+			}]
+			title: "狂风呼啸"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1BC38A6ED24678EC"]
+			description: [
+				"矿车装配站可以组装实体化的运动结构。先把结构用强力胶粘好，再连接方块到装配站上，然后用矿车带走。扳手Shift+右键可以把装配好的矿车直接拆下来带走，给矿车装配站输入红石信号即可使结构卸载成方块！"
+				"这是矿机常用的方式，也许还有些其他作用？"
+				"&l&c*本任务为Chapter 3的前置任务。"
+			]
+			id: "13B19307A687381C"
+			tasks: [{
+				id: "68184BC3712E4555"
+				item: "create:cart_assembler"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4E0B531E5E26F211"]
+			description: [
+				"强力胶可以连接不同方块为一个整体，如果你想制作一个全羊毛方块或者有其他方块的风车，强力胶必不可少。"
+				"粘液球难搞？这里是机械动力，查查合成有惊喜！"
+			]
+			id: "418148E4B4732C42"
+			rewards: [{
+				id: "20C02CFE88ED0AD6"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02DDFAF8CA2B3D74"
+				item: {
+					Count: 1
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["04F9E9271DE03515"]
+			description: [
+				"石磨可以进行基础的磨碎工艺，不过并不能处理矿石。"
+				"会有更好的方式的。"
+			]
+			id: "229B38E8C58ADDD6"
+			rewards: [{
+				id: "34F9766A6B57012C"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "161A5FA0303B2715"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3C49DD84554E93D6"]
+			description: ["传送带是最基础的物流运输方式之一。选定起点，选定终点即可创建一条传送带。在长度限制里无论多长的传送带都只消耗一个。而置物台可以被认为是“静止的传送带”它们的作用是类似的。"]
+			id: "557D225C8FEC6555"
+			rewards: [{
+				id: "7E9B9B5E6B41703B"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1D003365CE94D224"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "76E3021836F93857"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			title: "物流运输 I"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["557D225C8FEC6555"]
+			description: [
+				"溜槽类似于漏斗，但只能纵向运输。"
+				"&m你说有没有一种可能，从下到上也是一种“纵向”？"
+			]
+			id: "383E648FE79ACD99"
+			rewards: [{
+				count: 12
+				id: "244588951E27E1AD"
+				item: "create:chute"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BA0736D939E383E"
+				item: "create:chute"
+				type: "item"
+			}]
+			title: "物流运输 II"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04F9E9271DE03515"]
+			description: [
+				"基础机器之一，根据转速和方向吹风。在前面加上不同的流体或者火焰可以进行不同的处理。"
+				"这些处理速度和转速无关，所以有时降低鼓风机转速是节省应力的好方法。"
+			]
+			id: "3DCE5C40F3B70EEA"
+			rewards: [
+				{
+					count: 3
+					id: "3577AC8A2F5498B8"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "5221329B378EFE96"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "2D542EBEC861C73D"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "2EB4990784794C2E"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					id: "17E5A7141F4A024B"
+					item: "minecraft:soul_campfire"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "43271CDE424C483C"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["383E648FE79ACD99"]
+			description: ["安山漏斗可以输入与输出物品，不过必须接入一个容器。同时，它只能一次输出一个物品。"]
+			id: "5D2B7D71BD325E98"
+			rewards: [{
+				id: "037A0312E6F30D87"
+				item: "create:depot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "032BCB226FD22B81"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			title: "物流运输 III-A"
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["383E648FE79ACD99"]
+			description: ["安山隧道可以用于装饰，或者分出物品。一次只会往支线上分出一个物品。"]
+			id: "59C599B003E89CFC"
+			rewards: [{
+				count: 2
+				id: "7689E1F1998A84F4"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5703D8559AF6D5B1"
+				item: "create:andesite_tunnel"
+				type: "item"
+			}]
+			title: "物流运输 III-B"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["557D225C8FEC6555"]
+			description: ["Wow, You can really dance!"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "6BFDA18F22E92DA0"
+			invisible: true
+			rewards: [{
+				id: "43504E4E30B80757"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			shape: "gear"
+			tasks: [{
+				advancement: "create:ejector_maxed"
+				criterion: ""
+				icon: "create:weighted_ejector"
+				id: "0CB9580183180696"
+				type: "advancement"
+			}]
+			title: "跳远冠军"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3DCE5C40F3B70EEA"]
+			description: [
+				"分散网可以将鼓风机的效果分散到各个方向。注意，是各个方向（包括下方）"
+				"但分散网并不能提升鼓风机处理效率，仍然需要叠加鼓风机。"
+			]
+			id: "3624475EFAEA2DCD"
+			tasks: [{
+				id: "185D7A843272CBAF"
+				item: "create:nozzle"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4E0B531E5E26F211"
+				"526873AB1D334AFA"
+			]
+			description: ["砂纸可以磨光物品，使用时需要将砂纸放在主手，物品放在副手。可以使用机械手自动化。"]
+			id: "124A3584C36B0126"
+			rewards: [{
+				id: "58AEFD2F2DC9AF7F"
+				item: {
+					Count: 1
+					id: "create:red_sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D8A557104791F27"
+				item: {
+					Count: 1
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	title: "Chapter 1：齿轮与风车"
+}

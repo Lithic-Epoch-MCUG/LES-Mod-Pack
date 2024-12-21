@@ -1,0 +1,421 @@
+{
+	autofocus_id: "27420726F37439D8"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_4"
+	group: "124D1A91B8085D6D"
+	icon: "farmersdelight:rice_panicle"
+	id: "7EFB5B7F0B67E18E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"农夫乐事是一系列农业主题的附属和附属的附属模组合称。"
+				"本章节介绍若干种农作物和手动处理的方式。"
+				"这些作物除了在村庄等结构中存在，还可能会在不同的生物群系中野生分布。请使用JEI查看具体分布。"
+			]
+			id: "03727714428D2FDC"
+			rewards: [{
+				id: "1F747D8A7C795B07"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1FB6C5D149C96471"
+				item: "minecraft:wheat"
+				type: "item"
+			}]
+			title: "农作物"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03727714428D2FDC"]
+			id: "7CE6A234A4A01B22"
+			rewards: [
+				{
+					count: 4
+					id: "14EEEAB28AE8429A"
+					item: "farmersdelight:tomato_seeds"
+					type: "item"
+				}
+				{
+					id: "4B31D1E9A18CF1DA"
+					item: "farmersdelight:tomato_crate"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4A46D6FBEEF754AB"
+				item: "farmersdelight:tomato"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7CE6A234A4A01B22"]
+			description: ["烂番茄是堆肥的良好材料。它可以由番茄缠魂得到。"]
+			id: "27D8D448D412F842"
+			rewards: [{
+				id: "65C4BA38BB952759"
+				item: "minecraft:soul_campfire"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DF45C481A77AFF9"
+				item: "farmersdelight:rotten_tomato"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["03727714428D2FDC"]
+			description: ["为啥这模组没有炸薯条（恼）"]
+			id: "6F9EFADA56C6CD06"
+			rewards: [
+				{
+					count: 16
+					id: "10DD747D669AB850"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					id: "574474D96250F49C"
+					item: "farmersdelight:potato_crate"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "050A9226A180ABBD"
+				item: "minecraft:potato"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03727714428D2FDC"]
+			description: ["胡萝卜！"]
+			id: "526A82D4B18EC76D"
+			rewards: [{
+				id: "2F2115AFD075AF15"
+				item: "farmersdelight:carrot_crate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "087D65D1CDFB8324"
+				item: "minecraft:carrot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["526A82D4B18EC76D"]
+			description: ["更好的胡萝卜！"]
+			id: "38047B22A7C08C95"
+			tasks: [{
+				id: "48210DFD00026394"
+				item: "minecraft:golden_carrot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["03727714428D2FDC"]
+			id: "605292BC84D6661D"
+			rewards: [{
+				id: "7F17C991BB3AE9AD"
+				item: "farmersdelight:onion_crate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "703DACF4943FD4EB"
+				item: "farmersdelight:onion"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["03727714428D2FDC"]
+			id: "7CF559E68A5A4EF3"
+			rewards: [{
+				id: "292ED872899EF369"
+				item: "farmersdelight:cabbage_crate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "220F1AFB7BA236A5"
+				item: "farmersdelight:cabbage"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7CF559E68A5A4EF3"]
+			description: ["卷心菜叶可由卷心菜加工得到，在部分食谱中可以起到与卷心菜相同的作用，节省材料。"]
+			id: "2208A3FAEDF7CDFD"
+			rewards: [{
+				id: "56020AD3ECC438A7"
+				item: "minecraft:composter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "324C42AC213E1952"
+				item: "farmersdelight:cabbage_leaf"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6F9EFADA56C6CD06"]
+			description: ["呃，这玩意有什么用吗？它甚至有生产线！"]
+			id: "0DA8800C8DD38DEE"
+			rewards: [{
+				id: "042F8D90DF6BD0AA"
+				item: "minecraft:poisonous_potato"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77B844DC6A407308"
+				item: "minecraft:poisonous_potato"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03727714428D2FDC"]
+			description: ["甜菜根除了村庄和野外自然生成，在海边也可以发现。"]
+			id: "20F226345B01BBAD"
+			rewards: [
+				{
+					id: "6B6DDE64CE0CE030"
+					item: "farmersdelight:beetroot_crate"
+					type: "item"
+				}
+				{
+					id: "6023FFC6DB184AF8"
+					item: "farmersdelight:wild_beetroots"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1C17A00C16404EDA"
+				item: "minecraft:beetroot"
+				type: "item"
+			}]
+			title: "甜菜根"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["03727714428D2FDC"]
+			description: [""]
+			id: "31801D7FBB18A54D"
+			rewards: [
+				{
+					id: "3B3B075EDBD0B344"
+					item: "farmersdelight:rice_bag"
+					type: "item"
+				}
+				{
+					id: "32BBF8D8DDEB62B7"
+					item: "farmersdelight:straw_bale"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5020E70EB076D0CC"
+				item: "farmersdelight:rice_panicle"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["31801D7FBB18A54D"]
+			description: ["这应该不用多介绍吧？"]
+			id: "04449787D5C32DC6"
+			rewards: [{
+				id: "02ED106F04B68EFD"
+				item: "farmersdelight:cooked_rice"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24229D610D8DDFE5"
+				item: "farmersdelight:rice"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"砧板可以用于&l手动&r切菜。你需要先制作一把刀。刀不用的时候可以放在砧板上。"
+				"砧板对可以使用的物品有很严格的要求，不能切制的物品不可以放在砧板里。"
+			]
+			id: "048DE52C280FC13F"
+			rewards: [{
+				id: "2DDC0D039F3E8160"
+				item: {
+					Count: 1
+					id: "farmersdelight:iron_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1D21968C46922B39"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			title: "农业机器"
+			x: -3.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["048DE52C280FC13F"]
+			description: ["石磨用于磨粉工艺，可以将小麦磨成面粉，或者将稻穗脱粒。"]
+			id: "5AEDA281BA382248"
+			tasks: [{
+				id: "2E0A90C38C7944D0"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["048DE52C280FC13F"]
+			description: ["搅拌可以将面粉搅成面团进行下一步加工。"]
+			id: "249EF182D2FC9209"
+			tasks: [{
+				id: "1109ED02DC8514D6"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["048DE52C280FC13F"]
+			description: ["厨锅是最重要的烹饪工具。给厨锅加热，按照特定的方式添加食材即可烹饪。你可以用烈焰人燃烧室，或者模组提供的砖炉方块，或者其他方式加热。"]
+			id: "7972680EA33B21BD"
+			rewards: [{
+				id: "60801A49423321B2"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A77B98C94F62D53"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["048DE52C280FC13F"]
+			description: [
+				"如题所示，煎锅用来煎制物品。注意火候，温度太高时可能会煎糊！"
+				"&m也许它还有些别的用途？……比如战斗？"
+			]
+			id: "2018FBD386D86668"
+			rewards: [{
+				id: "3B1A3C1C32BF4C56"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C424FC47010E39D"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["048DE52C280FC13F"]
+			description: ["篮子用于装载食材。为啥不用箱子？田园风光懂不懂啊（滑稽"]
+			id: "5F5F161DBF5F3341"
+			rewards: [{
+				id: "589090830D3954EE"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			tasks: [{
+				id: "51317018146301EE"
+				item: "farmersdelight:basket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			description: ["沃土可以更快地生长植物。它可以从有机肥料处获得。"]
+			id: "27420726F37439D8"
+			tasks: [{
+				id: "3D81F9D92183282A"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"农夫乐事提供了大量菜品，可以提供正面效果并回复大量生命值。"
+				"受篇幅所限，此处无法一一列举，请自行查看JEI。"
+			]
+			id: "0FB670D9684514C8"
+			rewards: [{
+				id: "61125339EA8C5874"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			tasks: [
+				{
+					advancement: "create:foods"
+					criterion: ""
+					id: "120D07B0B2652EF0"
+					type: "advancement"
+				}
+				{
+					advancement: "farmersdelight:main/plant_all_crops"
+					criterion: ""
+					id: "5FEEC0146215B8D7"
+					type: "advancement"
+				}
+				{
+					advancement: "farmersdelight:main/master_chef"
+					criterion: ""
+					id: "4C02642C1DEC90B5"
+					type: "advancement"
+				}
+			]
+			x: -2.0d
+			y: -1.5d
+		}
+	]
+	title: "Chapter 1：以农为本"
+}

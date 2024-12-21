@@ -1,0 +1,4 @@
+#Wed Dec 04 00:41:01 SGT 2024
+shadowMapResolution=3072
+SHADOW_PIXEL=128
+WAVING_LEAF=false

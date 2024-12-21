@@ -1,0 +1,724 @@
+{
+	autofocus_id: "60BB1F78F2780593"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_2"
+	group: "2E0650F98DAA5E4B"
+	icon: "create:steam_engine"
+	id: "3BE9146CCE1ED6F7"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"锅炉是一种获取大量应力的好方式，它从流体储罐开始。"
+				"往流体储罐上接上一个引擎就是一个锅炉。但使锅炉开始运作还需要一些东西——热量和水。水可以用管道抽进锅炉供应，而热量的供应就有些复杂了。"
+			]
+			id: "60BB1F78F2780593"
+			rewards: [
+				{
+					id: "4E389443B3C81DDF"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					id: "1894B867A872BE78"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "2CBF0C53842010F6"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "5E95F6B32C720DB6"
+				item: { Count: 4, id: "create:fluid_tank" }
+				type: "item"
+			}]
+			title: "流体储罐"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60BB1F78F2780593"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "781B24CAF32B0487"
+			invisible: true
+			rewards: [{
+				id: "34D01BDA7041975A"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "狠狠地烧！"
+			tasks: [{
+				count: 64L
+				id: "60A5C927FA629C6E"
+				item: { Count: 64, id: "create:blaze_burner" }
+				type: "item"
+			}]
+			title: "熊熊烈火"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6AA18C074A59FEFD"
+				"2C5F8E36628DE14B"
+			]
+			description: [
+				"转速控制器可以智能控制与之相连的大齿轮的转速，最大256且可以精确到1！"
+				"*本任务需要完成齿轮传动II以完成。"
+			]
+			hide_dependency_lines: false
+			id: "1DB476B861009213"
+			rewards: [
+				{
+					count: 3
+					id: "27F88C435CCBA20E"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "742A5F0A2F16D12E"
+					item: "create:rotation_speed_controller"
+					type: "item"
+				}
+			]
+			subtitle: "智能时代！"
+			tasks: [{
+				id: "37693A3BF36B1627"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			title: "齿轮传动 III"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["60BB1F78F2780593"]
+			description: [""]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "5DD8A9A02013ADD2"
+			invisible: true
+			rewards: [{
+				id: "56951CFDC8348264"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "这玩意总不能是手搓了吧"
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "5DBC9F2AE23A83DD"
+				item: { Count: 63, id: "create:brass_block" }
+				type: "item"
+			}]
+			title: "量产之力 II"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["60BB1F78F2780593"]
+			dependency_requirement: "one_completed"
+			description: ["智能溜槽是溜槽的升级版，不仅一次可以流过最高一组物品，还可以设置允许流过的物品种类以及数量，并且可以用红石控制开关。"]
+			id: "52C37A7113D6786B"
+			rewards: [{
+				id: "5F8BAFEB88E0D0F1"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FCCE2DD555A239A"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			title: "物流运输 IV"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60BB1F78F2780593"]
+			description: ["蒸汽引擎搭建较为复杂，但可以输出巨量应力。"]
+			id: "3C3D6F630B750E87"
+			rewards: [{
+				id: "3B6A064B96A163AD"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			subtitle: "应力问题的最终解决方案"
+			tasks: [{
+				id: "474D05C358927F60"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "澎湃动力 III"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["52C37A7113D6786B"]
+			description: ["黄铜漏斗是安山漏斗的升级版，它一次可以输入/输出最多64个物品且可以指定通过的物品和数量。"]
+			id: "082B62D876B5EE85"
+			rewards: [{
+				count: 2
+				id: "726E343842E84764"
+				item: "create:brass_funnel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "43A2C81ED3190E5E"
+				item: "create:brass_funnel"
+				type: "item"
+			}]
+			title: "物流运输 V-A"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["52C37A7113D6786B"]
+			description: ["黄铜隧道是安山隧道的升级版，它可以指定流入的物品与数量，当多个漏斗连接在一起时它们会平均输出输入的物品。"]
+			id: "3E835EBCCD1BC592"
+			rewards: [{
+				count: 2
+				id: "748805D61487231F"
+				item: "create:brass_tunnel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C9CC06454D28BEF"
+				item: "create:brass_tunnel"
+				type: "item"
+			}]
+			title: "物流运输 V-B"
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60BB1F78F2780593"]
+			description: ["黄铜机壳和安山机壳类似，可以用于装饰或者制作更多机器。"]
+			id: "4D64E1EC0917ABD1"
+			shape: "hexagon"
+			size: 1.05d
+			tasks: [{
+				id: "35EA8EFDEB233FA6"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D64E1EC0917ABD1"]
+			description: ["动力合成器用于自动化合成，同时也不受3*3合成表的限制。注意，动力合成器的物品需要连成一个整体并有空间输出（空气或者存储方块均可）。当所有空间都被填满或者接收到红石信号时会自动工作。"]
+			id: "3DEB8D67CBD3B668"
+			tasks: [{
+				id: "54E9B6E2CE82D61C"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3DEB8D67CBD3B668"]
+			description: [
+				"粉碎轮是石磨的加强版，效率更高，但耗能也更高。"
+				"两个粉碎轮需要以相对的方向旋转且处理方向是固定的。"
+			]
+			id: "14787079F63A0940"
+			rewards: [{
+				count: 16
+				id: "5690CEDBBFD39224"
+				item: "create:crushed_raw_iron"
+				type: "item"
+			}]
+			subtitle: "粉碎一切！"
+			tasks: [{
+				count: 2L
+				id: "51F0B783BCD50EA7"
+				item: { Count: 2, id: "create:crushing_wheel" }
+				type: "item"
+			}]
+			title: "粉碎轮"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D64E1EC0917ABD1"]
+			description: ["机械手可以代替玩家的手进行各种动作以及组装。用扳手右击机械手可以改变模式。"]
+			id: "024230BF84587171"
+			tasks: [{
+				id: "3AFA684FBC3AEED2"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2C5F8E36628DE14B"]
+			description: [
+				"动力臂并不只是机械臂单纯的升级版，它和机械臂在很多地方的作用并不相同。"
+				"在放置前需要首先指定输入和输出，在工作时会按照指定的顺序进行输入与输出。"
+				"用扳手可以查看动力臂的输入与输出方块。"
+			]
+			id: "1F98F662D13B039D"
+			rewards: [{
+				id: "7B3E2CFC2EC67B3F"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			subtitle: "解放双手！"
+			tasks: [{
+				id: "7E77437DA70EEAA2"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D64E1EC0917ABD1"]
+			description: ["精密构件可以用于制造转速控制器等，"]
+			id: "2C5F8E36628DE14B"
+			subtitle: "科技改变生活"
+			tasks: [{
+				id: "3FFAFAE38836220B"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60BB1F78F2780593"]
+			description: [
+				"管道可以用来运输流体。"
+				"注意，一个管道网络中只可以存在一种流体，两种不同流体相遇时相遇的管道会被破坏。"
+			]
+			id: "73D98393970F95E5"
+			rewards: [{
+				count: 16
+				id: "0B2826A7AA8E1FA0"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			subtitle: "传输流体！"
+			tasks: [{
+				id: "4E2D56C0B9BE98AD"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			title: "流体传输 I"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["73D98393970F95E5"]
+			description: [
+				"动力泵可用于抽出流体，它的作用范围是16格管道。"
+				"当动力泵运作时，水流方向的一端可以吸收管道口的流体源方块（当这一流体不被认为是无限流体时），输出端可以输出相应的流体源方块。"
+			]
+			id: "4B4CD08814091A5A"
+			rewards: [{
+				id: "3BE8424E89B994E8"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71EDD2B433766595"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			title: "流体运输 II"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4B4CD08814091A5A"]
+			description: ["智能管道和智能溜槽类似，可以选择允许通过的流体。"]
+			id: "4EEE9DB4FD2BFCFE"
+			rewards: [{
+				id: "29DE724B4BF62978"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A6C02266D007CC8"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			title: "流体运输 III-A"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"082B62D876B5EE85"
+				"3E835EBCCD1BC592"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"移动式存储接口用于在移动结构和静止的方块存储之间交换物体。这一过程不需要应力，且方向默认是移动结构到静止的方块。"
+				"移动式液体接口与之类似，但是只能用来转移液体且必须安装在锅炉上。"
+			]
+			id: "6BDA77965A7CE1DC"
+			rewards: [{
+				id: "3179C51B69BBC804"
+				item: "create:portable_fluid_interface"
+				type: "item"
+			}]
+			tasks: [{
+				id: "110950F37CBF8D26"
+				item: "create:portable_storage_interface"
+				type: "item"
+			}]
+			title: "物流运输 VI"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6BDA77965A7CE1DC"]
+			description: [
+				"物品保险库可以用来储存大量物品，但是不能手动放入或取出其中的物品，需要搭配漏斗、溜槽等使用。"
+				"物品保险库和流体储罐类似，都可以形成2*2或者3*3的结构，而所有面都可以输入/输出物品（没错，底部是可以输入的！）在某些需要缩小或堆叠的机器中可能会有作用。"
+			]
+			id: "51564D8101E21677"
+			rewards: [{
+				id: "204FFC912744E4BF"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "2E4EFD48ABAE9B18"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			title: "物流运输 VII"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B4CD08814091A5A"]
+			description: [
+				"流体阀门用于控制液体进出。"
+				"按照一定方式提供应力即可控制，因此建议配合阀门手轮使用。"
+			]
+			id: "1AC543365EEBE846"
+			rewards: [{
+				id: "3B3CBA3965867E24"
+				item: "create:copper_valve_handle"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18BC2958BB912925"
+				item: "create:fluid_valve"
+				type: "item"
+			}]
+			title: "流体运输 III-B"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"1AC543365EEBE846"
+				"4EEE9DB4FD2BFCFE"
+			]
+			description: [
+				"移动式流体接口可以在移动的储罐和静止的储罐之间交换流体。"
+				"当移动的储罐停下来时，对准的两个移动式流体接口会自动对接，但如果没有动力泵流体不会主动转移。"
+			]
+			id: "27645C7BE4A40050"
+			rewards: [{
+				id: "4ACC8951C037886B"
+				item: "create:portable_fluid_interface"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C2809AA851A505B"
+				item: "create:portable_fluid_interface"
+				type: "item"
+			}]
+			title: "流体运输 IV"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2C5F8E36628DE14B"]
+			description: [
+				"无线红石信号终端可以无线交换红石信号。"
+				"在红色与蓝色位置塞入相应物品即可实现调频，相同频道（两个物品的位置相同）才能实现通信。无线红石信号终端默认为输出模式，用扳手右击可以改为接收模式。"
+				"输出模式下的无线终端可以用拉杆等无需调频的红石信号激活，或者使用无线红石遥控器。"
+			]
+			id: "1DABA30DE192B410"
+			rewards: [{
+				id: "5A4B229D40ADF5C3"
+				item: "create:linked_controller"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6DB4940698104331"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1DABA30DE192B410"]
+			description: [
+				"应力表可以显示当前网络中的总应力和剩余应力。"
+				"应力表和速度表可以互相转换。"
+			]
+			id: "4DC33894137BE34A"
+			rewards: [{
+				id: "6015F6D12A9F25D0"
+				item: "create:speedometer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53EDD4C691C28BB2"
+				item: "create:stressometer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1DABA30DE192B410"]
+			description: [
+				"给翻牌显示器提供应力（需要达到一定速度），它就可以显示字符。"
+				"你可以用剪贴板指定固定字符，也可以"
+			]
+			id: "4DBABBD1F3BC0067"
+			rewards: [
+				{
+					count: 12
+					id: "799A8DA93AD7A73F"
+					item: "create:display_board"
+					type: "item"
+				}
+				{
+					id: "3CF98551C372B540"
+					item: "create:clipboard"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "750D57DC403C6EF9"
+				item: "create:display_board"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DBABBD1F3BC0067"]
+			description: ["显示链接器可以连接屏幕和一些部件，动态显示信息。"]
+			id: "5DA1482AEC031CB2"
+			rewards: [{
+				count: 8
+				id: "1B5BF75826987E8C"
+				item: "create:display_board"
+				type: "item"
+			}]
+			tasks: [{
+				id: "27F30041ADA4D277"
+				item: "create:display_link"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DBABBD1F3BC0067"]
+			description: ["辉光管和翻牌显示器类似，可以显示字符。"]
+			id: "392CFD59B250672B"
+			rewards: [{
+				count: 8
+				id: "61A69E8EEE11CB5A"
+				item: "create:nixie_tube"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71D24EFB66AFEF83"
+				item: "create:nixie_tube"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1DABA30DE192B410"]
+			description: ["这些组件可以实现一些红石功能。"]
+			icon: "create:pulse_repeater"
+			id: "413616DBAF2DFE31"
+			rewards: [
+				{
+					id: "61C14A816D4C7569"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+				{
+					id: "5A6CE5F1F33BE3B7"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+				{
+					id: "27C2848DB2196D12"
+					item: "create:powered_latch"
+					type: "item"
+				}
+				{
+					id: "7CC71C12FBC6BC43"
+					item: "create:powered_toggle_latch"
+					type: "item"
+				}
+			]
+			subtitle: "脉冲与锁存"
+			tasks: [{
+				id: "2C08CDB115AEEBE6"
+				type: "checkmark"
+			}]
+			title: "高级红石组件"
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3C3D6F630B750E87"]
+			id: "4E4C156E46FD9288"
+			invisible: true
+			rewards: [{
+				count: 64
+				id: "73699C4AE964C01E"
+				item: "create:shaft"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "应力短缺成为历史！"
+			tasks: [{
+				count: 36L
+				id: "797FBACF4E37DFC7"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "澎湃动力 IV"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["413616DBAF2DFE31"]
+			description: [
+				"玫瑰石英灯与普通红石灯不同，它在收到脉冲时会改变&n一次&r状态，因此你需要按两次按钮才能实现一次亮-灭。"
+				"在玫瑰石英灯亮时，它会持续发出红石信号，且每次更新状态都会发出一次脉冲。"
+			]
+			id: "25461474A540FB51"
+			rewards: [{
+				count: 6
+				id: "0FC179D3E694CDC1"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			tasks: [{
+				id: "406FCDB59AE0B389"
+				item: "create:rose_quartz_lamp"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["27645C7BE4A40050"]
+			description: [
+				"软管滑轮可以吸收一片区域内的流体。"
+				"当这片区域的流体总方块数超过10000时，会被认为是无限量的，这时抽走流体不会有消耗。向软管滑轮输入特定方向的应力可以降下滑轮，反向即可收回滑轮。"
+			]
+			id: "5D6449685071BDB3"
+			rewards: [{
+				id: "4E21A92C35E153AC"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "3EB64F8D2406A1A9"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			title: "流体运输 V"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5DA1482AEC031CB2"]
+			description: ["智能侦测器可以检测多种内容：容器物品、方块、经过漏斗等的物品。和智能溜槽一样，你可以在筛选器中选择筛选的物品。"]
+			id: "7CD0EBD804EAE21A"
+			rewards: [{
+				count: 16
+				id: "0C7F3AB41029150E"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E88AB60B5CAD5E6"
+				item: "create:content_observer"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5DA1482AEC031CB2"]
+			description: [
+				"存量转信器用于检测容器内物品所占容积比例。当比例到达设定范围内时输出红石信号。"
+				"和智能溜槽类似，你可以筛选需要检测的物品。此时容器内其他物品会被忽略。"
+			]
+			id: "6F1F0AB9ADF7E77B"
+			rewards: [{
+				count: 2
+				id: "32B911201A594B0B"
+				item: "minecraft:barrel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4FE9F87E60A3C5B6"
+				item: "create:stockpile_switch"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"082B62D876B5EE85"
+				"52C37A7113D6786B"
+			]
+			description: [
+				"过滤器可以搭配黄铜系列方块使用实现精确地物品控制。"
+				"除了指定物品的列表过滤器还有指定NBT/属性的属性过滤器，一个方块只能使用一个过滤器。"
+			]
+			id: "6715A083401CC4F3"
+			rewards: [{
+				id: "30B183B3FE993A1A"
+				item: "create:attribute_filter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48F1C495C662F34A"
+				item: "create:filter"
+				type: "item"
+			}]
+			title: "物流运输 V-C"
+			x: -3.5d
+			y: 0.0d
+		}
+	]
+	title: "Chapter 2：锅炉与蒸汽"
+}

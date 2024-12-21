@@ -1,0 +1,311 @@
+{
+	autofocus_id: "13F527768A3AF797"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_2"
+	group: "0E89E6A6FF145845"
+	id: "54CF827978C3B69C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["13F527768A3AF797"]
+			description: [
+				"列车站是铁路系统最基本的方块。先指定铁轨，再放下列车站，即可在这条铁轨上放置列车。"
+				"每个列车都由若干车厢组成，一个车厢最多只有2个转向架。"
+			]
+			id: "27CAA7DEA465B7F3"
+			rewards: [{
+				count: 16
+				id: "117EBBEB169131B5"
+				item: "create:track"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6691DC9AB5E639FD"
+				item: "create:track_station"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["13F527768A3AF797"]
+			description: ["列车运行在轨道上。"]
+			id: "7CE512A5DC2E5035"
+			rewards: [{
+				id: "5977FBD21E375E0A"
+				item: "railways:handcar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5CC9D0E4057B4471"
+				item: "create:track"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7CE512A5DC2E5035"]
+			description: [
+				"无砟轨道和普通的列车轨道完全一致，只有视觉上的差别。"
+				"*本任务可以重复完成，且每次提交任务都会消耗1个列车轨道。"
+				"**本任务与其并列的任务为一组且都是可重复的，可根据实际情况自行交换两种轨道。"
+			]
+			id: "0A85B2D881F31BE4"
+			rewards: [{
+				id: "4570FD53248D7BF1"
+				item: "railways:track_tieless"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				id: "6324313AE698138D"
+				item: "create:track"
+				type: "item"
+			}]
+			title: "无砟轨道"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7CE512A5DC2E5035"]
+			description: [
+				"无砟轨道和普通的列车轨道完全一致，只有视觉上的差别。"
+				"*本任务可以重复完成，且每次提交任务都会消耗1个列车轨道。"
+				"**本任务与其并列的任务为一组且都是可重复的，可根据实际情况自行交换两种轨道。"
+			]
+			id: "69BFDAFAF4822C17"
+			rewards: [{
+				id: "142388C82D794FEE"
+				item: "create:track"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: true
+				id: "299A1803ADF44479"
+				item: "railways:track_tieless"
+				type: "item"
+			}]
+			title: "无砟轨道_2"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			description: ["列车机壳是铁路系统最基本的方块之一。它不仅可以制造与列车有关的方块，将其放置在启用的列车站便可以创建转向架。"]
+			id: "13F527768A3AF797"
+			rewards: [
+				{
+					count: 4
+					id: "485FB69B97CFEEFB"
+					item: "create:train_door"
+					type: "item"
+				}
+				{
+					id: "18B698378A5C1B7B"
+					item: "railways:handcar"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0C3CAC2F2190949F"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["13F527768A3AF797"]
+			description: [
+				"列车驾驶台是用于驾驶列车的基本方块，每个列车至少需要1个。"
+				"列车驾驶台是有方向的，反向无法驾驶列车。你可以自己驾驶，或者用烈焰人燃烧室或其他动物来驾驶列车。"
+			]
+			id: "526873AB1D334AFA"
+			rewards: [{
+				count: 4
+				id: "477324F59F0F6074"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			tasks: [{
+				id: "766B29A553724737"
+				item: "create:controls"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["526873AB1D334AFA"]
+			description: [
+				"坐垫可以放置在列车上供玩家或者其他动物乘坐。"
+				"在用拴绳牵着动物时你可以右键坐垫把动物直接放上去。"
+			]
+			id: "5C884D829066FE40"
+			rewards: [{
+				id: "4231FCACF26CD940"
+				item: "create:white_seat"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26D95C5F4CF8A2FA"
+				item: "create:white_seat"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["27CAA7DEA465B7F3"]
+			description: [
+				"列车信号机可以用于自动化控制列车，它有两种模式。"
+				"臂板信号机需要和普通的信号机配合使用，但是用途有些不同。"
+			]
+			id: "20E0EE266249AB88"
+			rewards: [{
+				count: 4
+				id: "50E327C18434144A"
+				item: "railways:semaphore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3AFA47F0668BC026"
+				item: "create:track_signal"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["27CAA7DEA465B7F3"]
+			description: [
+				"尽管带有时刻表的列车会自动选择路线，你也可以手动驾驶，但在某些道路上转辙器仍有其作用。"
+				"当铁路分叉时转辙器可以强制列车前往某一条路线，并且是单向的，另一侧的列车不受影响。这可能会导致列车无法寻路。"
+			]
+			id: "1BE756FAA23170F9"
+			rewards: [{
+				id: "1FBBE8808AA818DE"
+				item: "railways:track_switch_brass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2266D2CCA7B0EA41"
+				item: "railways:track_switch_andesite"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["27CAA7DEA465B7F3"]
+			description: [
+				"列车侦测器可以检测通过的列车并输出红石信号。"
+				"它可以设置筛选的物品，当列车上装有相应物品时激活侦测器。"
+			]
+			id: "678E2FCC2BD15ABA"
+			rewards: [{
+				id: "73205878FEF0D3E0"
+				item: "minecraft:repeater"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4481D8C618CA9234"
+				item: "create:track_observer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["27CAA7DEA465B7F3"]
+			description: [
+				"列车连挂器可以连接或解挂列车而不需要拆解列车。每次连接或解挂需要输入红石信号。"
+				"&c注意，“车钩”方块是纯装饰性的，没有实际用途！"
+			]
+			id: "34613B1DBDEE6948"
+			rewards: [{
+				id: "07ABC2C9474C50B1"
+				item: "create:track_station"
+				type: "item"
+			}]
+			tasks: [{
+				id: "030478297BBB89DB"
+				item: "railways:track_coupler"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["27CAA7DEA465B7F3"]
+			description: [
+				"列车时刻表可以自动化列车运行。"
+				"右键打开界面编辑列车运行状态，然后交给烈焰人燃烧室或者坐在坐垫上的&l任何生物&r。将已编辑的列车时刻表放在合成栏中以恢复到初始状态。"
+			]
+			id: "4577601A635E36C2"
+			rewards: [{
+				count: 3
+				id: "4C8AB14BE28F34C0"
+				item: "create:schedule"
+				type: "item"
+			}]
+			subtitle: "自动化列车"
+			tasks: [{
+				id: "5883F352C88EC661"
+				item: "create:schedule"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["526873AB1D334AFA"]
+			description: [
+				"列车内部空间太少？试试伪装板！"
+				"伪装板可以无支撑地搭建最外部，用方块右键可以指定材质（会消耗方块）。用扳手右键以清除材质，Shift+右键以拆除伪装板。以上两种操作都会返还方块。"
+			]
+			id: "0CF9DEAFB7DB7320"
+			rewards: [{
+				count: 32
+				id: "0C0A185769027D5C"
+				item: "create:copycat_panel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "472690D4DFC3F865"
+				item: "create:copycat_panel"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["526873AB1D334AFA"]
+			description: [
+				"新形态：半阶！"
+				"伪装半阶和伪装板类似。但需注意：伪装半阶无论放置在哪个位置都是不完整方块，不能作为灯笼等方块的放置位置。"
+			]
+			id: "6600ADF071D5E920"
+			rewards: [{
+				count: 32
+				id: "28D43E0D15AC5760"
+				item: "create:copycat_step"
+				type: "item"
+			}]
+			tasks: [{
+				id: "69BBA27500519CD6"
+				item: "create:copycat_step"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+	]
+	title: "Chapter 1：轨道交汇"
+}

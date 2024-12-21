@@ -1,0 +1,457 @@
+{
+	autofocus_id: "25914FFE2880D4DC"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_3"
+	group: "2E0650F98DAA5E4B"
+	icon: "create:mechanical_bearing"
+	id: "239822A5F982C37E"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4DA18E89419215D4"]
+			description: [
+				"动力收割机可用于收割作物并且自动补种。"
+				"它需要安装在一个移动结构上，也许制作矿机的经验能帮到你。"
+			]
+			id: "2AF5B61AF0EF6F65"
+			rewards: [{
+				id: "0B2C43A64F0B5743"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			tasks: [{
+				id: "201B23997D04831B"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["25914FFE2880D4DC"]
+			description: [
+				"动力轴承是最基本的运动结构，但它不是第一个运动结构——还记得以前的风车吗？"
+				"和风车类似，动力轴承需要输入应力并且需要用强力胶粘连结构。"
+			]
+			id: "4DA18E89419215D4"
+			rewards: [{
+				count: 4
+				id: "4712DE81423839F1"
+				item: "create:shaft"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "71131CFF6C8245CF"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DA18E89419215D4"]
+			description: [
+				"轴向底盘可以部分取代强力胶的作用。"
+				"相同型号且相同方向的轴向底盘会自动相连，无需强力胶。"
+				"每个轴向底盘有两个外露面，用强力胶右击外露面可以使其粘连该方块方向上一定距离内的所有方块，且这个距离可以用扳手设置。"
+			]
+			id: "623A8CDE06781F48"
+			rewards: [{
+				id: "47C4416E75337820"
+				item: "create:radial_chassis"
+				type: "item"
+			}]
+			subtitle: "两种底盘不分家"
+			tasks: [
+				{
+					id: "3F387F60AE167B6D"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+				{
+					id: "5889823194599F9F"
+					item: "create:secondary_linear_chassis"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4DA18E89419215D4"]
+			description: [
+				"径向底盘可以部分取代强力胶的作用。"
+				"方向相同且在同一行的径向底盘会自动相连，无需强力胶。"
+				"每个径向底盘有四个外露面，用强力胶右键外露面可以使其粘连一定半径内所有可达方块，且这个半径可以用扳手设置。"
+			]
+			id: "0D6EDFD8B00F81E5"
+			rewards: [
+				{
+					id: "5EC03D563A29BB19"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+				{
+					id: "779FD4AC4E63EEE6"
+					item: "create:secondary_linear_chassis"
+					type: "item"
+				}
+			]
+			subtitle: "两种底盘不分家"
+			tasks: [{
+				id: "0181E3D20FF52357"
+				item: "create:radial_chassis"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"623A8CDE06781F48"
+				"0D6EDFD8B00F81E5"
+			]
+			description: [
+				"黏着器可以控制是否粘连方块。"
+				"每次输入&l红石脉冲&r都会改变一次它的状态。黏着器并不能取代强力胶改变轴向/径向底盘的外露面状态。"
+			]
+			id: "7B0345B994043784"
+			rewards: [{
+				id: "07F3361F054277B3"
+				item: "minecraft:oak_button"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C3E3349EBCEA3AF"
+				item: "create:sticker"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DA18E89419215D4"]
+			description: ["动力犁可以耕地、破坏非实体方块（例如红石火把、拉杆等），还可以在不伤害实体的情况下推动他们。"]
+			id: "56808D7550DAEFBA"
+			rewards: [{
+				id: "60FCF56189FB3B80"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3AFED52927C678C8"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6E383146526023D1"]
+			description: ["动力活塞和活塞类似，可以推动方块。不过它需要输入应力，还可以通过插入活塞杆的方式近似无限地延长距离。"]
+			id: "2E9F17A89EB06658"
+			rewards: [{
+				id: "1084DBBC287C6D0C"
+				item: "create:sticky_mechanical_piston"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5CCAF3DF89D24FDA"
+				item: "create:mechanical_piston"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["25914FFE2880D4DC"]
+			description: [
+				"绳索滑轮可以使连接的结构垂直上下。"
+				"在默认情况下，绳索滑轮连接的结构在静止不动时会方块化，这一特点可以用扳手修改，例如改为永不方块化。"
+			]
+			id: "5F457E1251B9DFC6"
+			rewards: [{
+				id: "6153429D7AAE21E8"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			tasks: [{
+				id: "082A1D748569495F"
+				item: "create:rope_pulley"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["13B19307A687381C"]
+			description: ["运动组件有多种形态，因此本章节以分散的形式进行。"]
+			id: "25914FFE2880D4DC"
+			rewards: [{
+				count: 16
+				id: "579141DA342D35A2"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			tasks: [{
+				id: "79FCDFC6B06B4437"
+				title: "运动组件"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2E9F17A89EB06658"]
+			description: [
+				"起重机取物器只能在起重机杆上运作，起到粘连方块的作用。"
+				"起重机杆可以被红石充能，这时它会阻止上面的起重机取物器运作。"
+			]
+			id: "31D5424C862B9EAD"
+			rewards: [{
+				count: 16
+				id: "4B54FA8F6EC10FD0"
+				item: "create:gantry_shaft"
+				type: "item"
+			}]
+			tasks: [{
+				id: "321F388D6C170C12"
+				item: "create:gantry_carriage"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5F457E1251B9DFC6"]
+			description: [
+				"升降机滑轮是一种特殊的绳索滑轮，它可以自动设定停止位置。"
+				"按照一定方式摆放接触式红石信号发生器，然后可以用控制器控制停靠楼层。"
+				"当静止端的接触式红石信号发生器收到红石信号时会召唤升降机结构运动至所在楼层。利用该特性和无线红石系统可以实现无线控制或自动化控制。"
+			]
+			id: "6E383146526023D1"
+			rewards: [
+				{
+					id: "72BA0A4753439023"
+					item: "create:contraption_controls"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "15765D61D475C7C7"
+					item: "create:redstone_contact"
+					type: "item"
+				}
+			]
+			subtitle: "电梯！"
+			tasks: [{
+				id: "14150F9D0C12BD3F"
+				item: "create:elevator_pulley"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["31D5424C862B9EAD"]
+			description: [
+				"你真的需要这么多起重机杆吗？"
+				"*这玩意似乎可以当普通的传动杆使用……好像也有些人是这么想的"
+			]
+			hide_dependent_lines: true
+			id: "67CBF3E9B2D5F9A3"
+			invisible: true
+			rewards: [{
+				id: "6447D6262199FA72"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [{
+				count: 64L
+				id: "791A35A2A9C83846"
+				item: "create:gantry_shaft"
+				type: "item"
+			}]
+			title: "生产过剩"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["25914FFE2880D4DC"]
+			description: [
+				"铜潜水靴可以使你能够在水下行走，还能让你在传送带上稳如泰山！"
+				"搭配铜制潜水装备以获得最佳效果。"
+			]
+			id: "396B9F8A27CE73AF"
+			rewards: [{
+				count: 16
+				id: "71BA3187E741B042"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0103B927436D9F5D"
+				item: {
+					Count: 1
+					id: "create:copper_diving_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25914FFE2880D4DC"]
+			description: ["铜潜水套装的一部分。能消耗背罐的气体储量以获得水下呼吸效果。"]
+			id: "1D787A6E1E926492"
+			rewards: [{
+				id: "1921228C8620A44D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6DF04FF2F4221E42"
+				item: {
+					Count: 1
+					id: "create:copper_diving_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"396B9F8A27CE73AF"
+				"1D787A6E1E926492"
+			]
+			description: [
+				"铜背罐是背罐的基础版，通过向其输入应力自动抽入空气并压缩，即可在水中呼吸使用。（需要配合潜水头盔）。"
+				"铜潜水套装可以通过传统的下界合金升级方式升级为下界合金套装，有更好的特性。"
+			]
+			id: "24B921006727A139"
+			rewards: [{
+				id: "486A9F07E9B1898A"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "create:capacity"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "635DAE3D23B66CF7"
+				item: {
+					Count: 1
+					id: "create:copper_backtank"
+					tag: {
+						Air: 900
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["24B921006727A139"]
+			description: ["穿戴&l全套&r下界合金潜水装备可以保护你在岩浆中不受伤害并获得更好的视野（需要消耗压缩空气）。"]
+			id: "48A8ACF3DAEB81D9"
+			rewards: [{
+				id: "2DFFDB29A515E7DB"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "create:capacity"
+							lvl: 2s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "614DE7A6A5FE3D1C"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A2F3B80215C5175"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "41CE3EE9FA00CBCB"
+					item: {
+						Count: 1
+						id: "create:netherite_backtank"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "下界合金潜水套装"
+			x: -10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4DA18E89419215D4"]
+			description: ["嘀嗒！"]
+			id: "783DB30382242320"
+			tasks: [{
+				id: "6C757D43E670EE41"
+				item: "create:clockwork_bearing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E383146526023D1"]
+			description: ["接触式红石信号发生器彼此接触时会发出红石信号，可以用于移动装置的自动化控制上。"]
+			id: "5E5B2062164ADAC8"
+			rewards: [{
+				count: 2
+				id: "09CD8739E4B15422"
+				item: "create:redstone_contact"
+				type: "item"
+			}]
+			tasks: [{
+				id: "030FDC51993CAB3D"
+				item: "create:redstone_contact"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+	]
+	title: "Chapter 3：运动结构与物品"
+}

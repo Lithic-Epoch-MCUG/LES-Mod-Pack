@@ -1,0 +1,340 @@
+{
+	autofocus_id: "319E96E1B95A3382"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_2_2"
+	group: "79F7F52CF885FCF3"
+	id: "1456AD7B84A3E3D5"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:block/fire_0"
+			rotation: 0.0d
+			width: 0.03125d
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/campfire_fire"
+			rotation: 0.0d
+			width: 2.0d
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			height: 2.0d
+			image: "create:block/copycat_base"
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:item/redstone"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.0d
+			y: 2.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["63CB7EF94D03F5FA"]
+			id: "24668323DE832AF0"
+			tasks: [{
+				id: "6F2709C40C5C90FC"
+				item: "create_connected:fan_blasting_catalyst"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["63CB7EF94D03F5FA"]
+			id: "5EA3D011470686D7"
+			tasks: [{
+				id: "79CB78E7100C210E"
+				item: "create_connected:fan_smoking_catalyst"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["63CB7EF94D03F5FA"]
+			id: "2BF7A7535A286A1D"
+			tasks: [{
+				id: "5407F04EB61ED0B9"
+				item: "create_connected:fan_splashing_catalyst"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["63CB7EF94D03F5FA"]
+			id: "0380C037A6558124"
+			tasks: [{
+				id: "3B124003AB236000"
+				item: "create_connected:fan_haunting_catalyst"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"鼓风机处理太臃肿？试试触媒！"
+				"它拥有四种模式，可以提供和普通处理完全相同的效率，并且其中的火焰等不会蔓延！"
+			]
+			id: "63CB7EF94D03F5FA"
+			rewards: [{
+				count: 3
+				id: "151DC63B6B4BD3C8"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53BEFA146F24E374"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"伪装板可以用于建筑，弥补一些建筑方块没有某些形态的缺陷（比如黑曜石台阶）。"
+				"注意：伪装板仍然需要消耗方块，这和机壳装饰传送带不一样；"
+				"除了伪装薄板外，一个方块空间内仍然只能放置一个方块。"
+			]
+			id: "0B7DD93DAA74559A"
+			rewards: [{
+				id: "60073306899DB4DF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "159BDF68A9537F1A"
+				item: "create:copycat_panel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B7DD93DAA74559A"]
+			description: [
+				"意义不明的完整伪装方块——我为啥不直接用这个方块呢？"
+				"它不受重力影响。"
+			]
+			id: "29B6527967791ADB"
+			rewards: [{
+				id: "470A3EDC0D3BF5CC"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			tasks: [{
+				id: "572835DDC062D0EC"
+				item: "create_connected:copycat_block"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0B7DD93DAA74559A"]
+			description: ["竖半阶！竖半阶！！竖半阶！！！"]
+			id: "289265802505193F"
+			rewards: [{
+				id: "1F0406634EBABF09"
+				item: "create:copycat_step"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1AA9D456E98E1F2E"
+				item: "create_connected:copycat_vertical_step"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0B7DD93DAA74559A"]
+			description: ["竖半阶都有了，我竖半砖这块谁给我补啊？"]
+			id: "2553B9A34B28283E"
+			rewards: [{
+				id: "1BF316C03E4A38C3"
+				item: "minecraft:spruce_slab"
+				type: "item"
+			}]
+			tasks: [{
+				id: "456AFD44DA673412"
+				item: "create_connected:copycat_slab"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B7DD93DAA74559A"]
+			description: ["伪装板的栅栏门可以正常工作。"]
+			id: "375086A4B57D26F4"
+			rewards: [{
+				id: "11B69B590CFEBDDA"
+				item: "create_connected:copycat_fence_gate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "37D04C895F4E87A8"
+				item: "create_connected:copycat_fence"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B7DD93DAA74559A"]
+			description: [""]
+			id: "3C81535F843D7EB1"
+			rewards: [{
+				id: "568E3938B3822DF4"
+				item: "create_connected:copycat_slab"
+				type: "item"
+			}]
+			tasks: [{
+				id: "628BC467853FB8AB"
+				item: "create_connected:copycat_stairs"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B7DD93DAA74559A"]
+			description: ["伪装梁是在方块中间的，适合做细柱子。"]
+			id: "0C68E7DE0AF6B404"
+			rewards: [{
+				id: "2619F704EA8344B4"
+				item: "create_connected:copycat_beam"
+				type: "item"
+			}]
+			tasks: [{
+				id: "28CD929845932941"
+				item: "create_connected:copycat_beam"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B7DD93DAA74559A"]
+			description: ["和其他所有伪装方块不同，它可以在同一个方块空间内塞进多个伪装板。"]
+			id: "1505B64DD5E1CD2C"
+			tasks: [{
+				id: "4C189ECF21CEC9FD"
+				item: "create_connected:copycat_board"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B7DD93DAA74559A"]
+			description: ["自己做一点试试吧！"]
+			id: "00B8018D2298ADAF"
+			tasks: [
+				{
+					id: "3B9B8CCF01D93C42"
+					item: "create_connected:copycat_box"
+					type: "item"
+				}
+				{
+					id: "736D9D21F53C4967"
+					item: "create_connected:copycat_catwalk"
+					type: "item"
+				}
+			]
+			title: "特殊形态的伪装板"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: ["无线红石信号终端的简化版。它可以和拉杆等放在同一个方块空间里。其他和普通的无线红石信号终端一致。"]
+			id: "319E96E1B95A3382"
+			rewards: [{
+				id: "6D057A7EEE7BB027"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			tasks: [{
+				id: "69A380F75FC04C0C"
+				item: "create_connected:linked_transmitter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: ["挺高科技的，不是吗？"]
+			id: "26CE854915E86E4A"
+			rewards: [{
+				id: "7F68EA275DA7BCEC"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "401102D6DC028FB6"
+				item: "create_connected:sequenced_pulse_generator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"物流接口可以与存储结构（箱子/木桶/保险库）连接，作为其输入/输出的终端。"
+				"注意，它必须和存储结构直接相连！"
+			]
+			id: "25CE7ADD5DFC0F76"
+			rewards: [{
+				id: "29BFE490EBF0FA07"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:barrel"
+					tag: {
+						woodType: "acacia"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B0DD01496CDD483"
+				item: "create_connected:inventory_access_port"
+				type: "item"
+			}]
+			title: "物流接口"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"桥接接口可以将两个存储结构相连并且承担物流接口的作用。"
+				"注意：桥接接口只能1对1，并且两边并不需要是一致的类型（例如溜槽-接口-箱子是可行的）"
+			]
+			id: "1BF73382F9EC5D37"
+			tasks: [{
+				id: "6386BE1388282BDF"
+				item: "create_connected:inventory_bridge"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "Chapter 2：物流与更多小玩意"
+}

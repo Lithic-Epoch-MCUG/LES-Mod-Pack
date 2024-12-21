@@ -1,0 +1,12 @@
+{
+	chapter_groups: [
+		{ id: "2E0650F98DAA5E4B", title: "奠定基础：机械动力本体" }
+		{ id: "0E89E6A6FF145845", title: "呜呜蒸汽：气鸣铁道" }
+		{ id: "124D1A91B8085D6D", title: "田园风光：农夫乐事" }
+		{ id: "1B70CE920A3A78FE", title: "科技腾飞：新时代" }
+		{ id: "0DE2A2D04EBD5A07", title: "工业魔法：附魔工艺" }
+		{ id: "1401F681F00E4A15", title: "引擎轰鸣：柴油动力" }
+		{ id: "79F7F52CF885FCF3", title: "超越原版：创意传动" }
+		{ id: "5424721BCC414E3B", title: "附录：其他附属" }
+	]
+}

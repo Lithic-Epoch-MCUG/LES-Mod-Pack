@@ -1,0 +1,231 @@
+{
+	autofocus_id: "4A819DA1D9E3ADD0"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_4"
+	group: "2E0650F98DAA5E4B"
+	icon: "create:sweet_roll"
+	id: "04015BEE766B08B2"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["oi！三点几嘞！饮茶先嘞！"]
+			id: "4A819DA1D9E3ADD0"
+			rewards: [{
+				id: "0700894A07D1FDC4"
+				item: "create:builders_tea"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FF8B384CE4DE47E"
+				item: "create:builders_tea"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A819DA1D9E3ADD0"]
+			description: ["巧克力！豪赤！"]
+			id: "6646D88889B479F2"
+			rewards: [{
+				id: "1DFB41249229271E"
+				item: "create:bar_of_chocolate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "35764DFFBE234DAE"
+				item: "create:chocolate_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4A819DA1D9E3ADD0"]
+			description: ["反正MC世界不会发胖，狠狠造就是了😋"]
+			id: "28E2AC80FCDC4531"
+			rewards: [{
+				id: "4BAB0815413C4DEE"
+				item: "minecraft:milk_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6CA5D0FF3ED19D43"
+				item: "create:sweet_roll"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4A819DA1D9E3ADD0"]
+			id: "0666B8ABBF859C3F"
+			tasks: [{
+				id: "33BB7DE835CCACA2"
+				item: "create:honeyed_apple"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4A819DA1D9E3ADD0"]
+			id: "21EB48B48FA9E520"
+			tasks: [{
+				id: "7175F1BD69EAAB5A"
+				item: "create:chocolate_glazed_berries"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"这是一个相当被人忽视的强力道具"
+				"对称之杖可以以镜面/四角/八角进行快速搭建。它可以很快地完成大规模建造。"
+				"记得提前备好材料！"
+			]
+			id: "4061C8821FCBC0DC"
+			rewards: [{
+				id: "53AC0E26BB7BEDF4"
+				item: "create:andesite_scaffolding"
+				type: "item"
+			}]
+			tasks: [{
+				id: "35FA5E46B785842F"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: ["砰砰砰！"]
+			id: "34B9328EB5D96CAE"
+			rewards: [{
+				id: "44306EA56D0167B4"
+				item: "minecraft:potato"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0492ADE7749A05CF"
+				item: {
+					Count: 1
+					id: "create:potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"伸缩机械手可以提升玩家的接触范围，配合喷气背罐效果更好。"
+				"&o我草！有人开reach！"
+			]
+			id: "5582AE9018A57236"
+			rewards: [{
+				id: "684DE000B1D93E4C"
+				item: {
+					Count: 1
+					id: "minecraft:iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0883B01851758EAF"
+				item: {
+					Count: 1
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4A819DA1D9E3ADD0"]
+			description: [
+				"人需要吃东西，烈焰人也是。"
+				"烈焰蛋糕可以为烈焰人燃烧室提供&b超级加热&f，但有消耗。记得及时补充食物！"
+			]
+			id: "6C8989C9C59921A2"
+			rewards: [{
+				id: "3339A8482EF9E13E"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B1CEECB0079DDEC"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"工具箱可以匹配储存最多六种物品，并可以一键收纳。"
+				"拿来装一些传送带啊齿轮啊非常不错！"
+			]
+			id: "5F41E694683E9B22"
+			rewards: [{
+				count: 4
+				id: "6CC9871A4639C438"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "20E67C9FA0440B4A"
+				item: "create:orange_toolbox"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "工具箱"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			description: ["布谷！布谷！"]
+			id: "37B36B554DC50F96"
+			tasks: [{
+				id: "276B3054BEA31E4A"
+				item: "create:cuckoo_clock"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"只有装饰作用的钟。"
+				"试试看shift所说的放在灵魂火上？"
+			]
+			id: "66CE875A86BA4585"
+			rewards: [{
+				id: "37AE5B7B09632CC0"
+				item: "create:haunted_bell"
+				type: "item"
+			}]
+			tasks: [{
+				id: "720FD6A9709D2384"
+				item: "create:peculiar_bell"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+	]
+	title: "Chapter 4：杂乱但有用的东西"
+}

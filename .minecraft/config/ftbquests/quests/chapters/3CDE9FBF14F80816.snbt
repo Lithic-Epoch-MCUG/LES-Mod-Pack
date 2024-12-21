@@ -1,0 +1,367 @@
+{
+	autofocus_id: "79932FB5E1670BA1"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3CDE9FBF14F80816"
+	group: ""
+	id: "3CDE9FBF14F80816"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [" "]
+			icon: "create:wrench"
+			id: "79932FB5E1670BA1"
+			rewards: [
+				{
+					id: "1E3867B14700FEC3"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F6318010792FAD7"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29C43B0A91CFAC98"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10E839D260F541F6"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07E9A8A55D5C59D9"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C1F9F28940B7198"
+					item: {
+						Count: 1
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1092AC5DE6DE9B94"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: " "
+			tasks: [{
+				id: "6E1EB55403B7C9CF"
+				title: "你好！"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: [
+				"思索是机械动力最为强大的系统之一。"
+				"将鼠标悬浮到可以思索的物品上，你会看见这样一行字："
+				"&n按住[&8W&f]以思索。"
+				"按住W，进入机械动力的思索世界，尽情运用你的俺寻思能力！"
+				"你也可以在Esc页面找到一个工程师护目镜按钮，那里也可以前往思索页面！"
+			]
+			icon: "create:goggles"
+			id: "64C315415209B2D5"
+			rewards: [
+				{
+					id: "0B1623931171DBA6"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "6A9254BABF3BA526"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "5080EA8C9B41F23F"
+				type: "checkmark"
+			}]
+			title: "[思索]"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: [
+				"该整合包授权所有人在标注整合包作者的前提下自由分发、使用、再发布该整合包，但禁止修改整合包内容以及商业用途。"
+				"&l特别地，ftb任务书中的文本、逻辑内容与翻译包保留所有权利，禁止在没有授权的情况下进行修改、编辑或复制到其他整合包或版本中。&r"
+				""
+				"本整合包使用的模组根据各自的协议进行使用、修改、发布。如果你需要在其他整合包或者游戏版本中使用本整合包的模组，请不要通过直接复制的方式安装，而前往各模组的下载页面下载安装。"
+			]
+			icon: "minecraft:clock"
+			id: "525EA029980F01AC"
+			rewards: [{
+				id: "3D0A1D78824C593B"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "整合包作者：计算稽"
+			tasks: [{
+				id: "7495177E5668C691"
+				title: "版权与授权"
+				type: "checkmark"
+			}]
+			title: "作者与授权"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: [
+				"机械动力原版模组，最经典的齿轮传动。"
+				"这是最基本的模组内容，是其他附属的必要前置。"
+			]
+			icon: "create:cogwheel"
+			id: "68A6C1555C22FBBD"
+			subtitle: "梦开始的地方"
+			tasks: [{
+				id: "0B1AC1A7282F76AC"
+				type: "checkmark"
+			}]
+			title: "机械动力"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: [
+				"气鸣铁道附属拓展了原模组中机械动力的内容，添加了一系列新铁轨、新方块等。它还包含一系列新的装饰方块。"
+				"注意：气鸣铁道的轨道运行逻辑与MTR等其他模组不同，请勿直接代换。"
+			]
+			icon: "create:track"
+			id: "52B5F31797AA2E45"
+			tasks: [{
+				id: "09F552300812EB7E"
+				type: "checkmark"
+			}]
+			title: "气鸣铁道"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: ["新时代（或译为电气时代）是以发电为主题的附属，其产出的能量与其他使用FE 能量的模组兼容（例如通用机械或者应用能源2）。本整合包并未对数值进行修改，但需要注意在其他兼容了多个使用FE的模组中为了适应数据可能会进行修改。"]
+			icon: "create_new_age:generator_coil"
+			id: "58902586F50E26B0"
+			tasks: [{
+				id: "07526EB33F8705A6"
+				title: "新时代"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: [
+				"农夫乐事是以农业为主题的附属。它提供了许多新的植物种类，配合机械动力可以用多种方式处理食材，产出多样化的食物。"
+				"农夫乐事还有若干附属（例如下界乐事等），不在此一一列出。"
+			]
+			icon: "farmersdelight:rice_panicle"
+			id: "126AC199811FB166"
+			tasks: [{
+				id: "50F4089D9795BD11"
+				title: "农夫乐事"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: ["附魔工艺是以附魔为主题的附属。它提供了新的附魔方式：烈焰人附魔，同时超经验的引入也提升了附魔的上限。复印功能更为工业化附魔提供了可能。"]
+			icon: "create_enchantment_industry:enchanting_guide"
+			id: "7E1EC79305DDA3D5"
+			tasks: [{
+				id: "386E784E8088638F"
+				title: "附魔工业"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: ["这是一个附加的附属包，提供了一种新的方块化发电方式，还有若干便捷化生存的内容（例如吸管）"]
+			icon: "createaddition:redstone_relay"
+			id: "11668782B24E56F0"
+			tasks: [{
+				id: "25F7101F1713C983"
+				title: "Crafts &r&&r Additions"
+				type: "checkmark"
+			}]
+			title: "Crafts % Additions"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: [
+				"你现在看到的是一个FTB任务界面。"
+				"这是一个任务模组，通过任务你可以对大概的发展路径有基本的认识。任务遵循严格的先后顺序，先做完前者才能完成后者。任务奖励也可以部分帮助你发展。"
+				"还有几个隐藏任务，试试制作一些大型机器也许会给你帮助。"
+			]
+			icon: "minecraft:lantern"
+			id: "608C862F81B910CF"
+			rewards: [{
+				id: "17CE55A17EF9633D"
+				item: "ftbquests:book"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "030C0E23A021E673"
+				type: "checkmark"
+			}]
+			title: "FTB 任务"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: [
+				"JEI是著名的物品管理模组。打开几乎所有方块的GUI界面在右侧都有一个类似字典的页面。在这个页面里，你可以查到几乎所有物品的合成方式（如果有），并且可以点击材料查看这个材料的合成方式，依此类推直到最终的原材料。"
+				"善用JEI，它可以帮你节省许多时间。"
+			]
+			id: "57467580B824997B"
+			rewards: [{
+				id: "6E2B07090653A3AB"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "6929804C98DB1752"
+				item: "minecraft:compass"
+				type: "item"
+			}]
+			title: "JEI"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: ["精妙存储是一系列存储类模组，包括精妙背包、精妙木桶等。它可以数倍甚至数十倍高于原版效率地存储物品并整体运输。"]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "6BF7C4864992517B"
+			rewards: [
+				{
+					id: "0CDC3968DAFB8D77"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+				{
+					id: "4C94BD5F6431586D"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:limited_barrel_1"
+						tag: {
+							woodType: "oak"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4C8C9A2531707B8E"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:barrel"
+						tag: {
+							woodType: "oak"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2046D421A264EDCD"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:packing_tape"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "2E560A3145BC66B9"
+				title: "锦致存储"
+				type: "checkmark"
+			}]
+			title: "精妙存储"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["79932FB5E1670BA1"]
+			description: ["创意传动附属提供了更多新颖的齿轮箱，触媒等，基于原版却又超越原版地实现了部分特性。"]
+			icon: "create_connected:crank_wheel"
+			id: "4AED3C2F6927A7E3"
+			tasks: [{
+				id: "2EBDB7204801D4B7"
+				title: "创意传动"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	title: "序言"
+}
