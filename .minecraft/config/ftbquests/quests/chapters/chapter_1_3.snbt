@@ -10,7 +10,7 @@
 		{
 			description: [
 				"机械动力附属的电力模组大多数生产FE能量，这意味着它们可以与其他使用FE能量的模组兼容，例如通用机械或者&oAd Astra&r和本包中使用的精妙存储。"
-				"本整合包仅作最基础的教学，以&oCreate:New Age&r与&oCreate:Crafts and Additions&r两个附属中的发电方式为例，它们分别代表的两种方式：多方块结构与单方块结构。"
+				"本整合包仅作最基础的教学，以&oCreate:New Age&r与&oCreate:Crafts and Additions&r两个附属中的发电方式为例，它们分别代表了两种方式：多方块结构与单方块结构。"
 				"在游玩其他兼容了不同模组的整合包时可能会为了平衡对数值进行修改。本包内容仅供参考。"
 			]
 			icon: "sophisticatedbackpacks:battery_upgrade"
